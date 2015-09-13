@@ -43,9 +43,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-# System Properties
--include $(LOCAL_PATH)/system_prop.mk
-
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
@@ -90,10 +87,6 @@ PRODUCT_PACKAGES += \
     gralloc.msm8226 \
     hwcomposer.msm8226 \
     memtrack.msm8226
-
-# Doze
-PRODUCT_PACKAGES += \
-    MotoDoze
 
 # Ebtables
 PRODUCT_PACKAGES += \
