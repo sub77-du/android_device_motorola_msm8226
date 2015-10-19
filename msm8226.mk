@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libboringssl-compat \
+    camera.msm8226 \
     libxml2
 
 # Display
