@@ -8,8 +8,14 @@ allow charge_only_mode graphics_device:dir search;
 allow charge_only_mode graphics_device:chr_file rw_file_perms;
 allow charge_only_mode input_device:dir search;
 allow charge_only_mode input_device:chr_file { read open };
+<<<<<<< HEAD
 allow charge_only_mode tty_device:chr_file { read write };
 
+=======
+allow charge_only_mode tty_device:chr_file rw_file_perms;
+
+allow charge_only_mode sysfs:file write;
+>>>>>>> 4d7a94b... msm8226-common: sepolicy: Set correct charge_only_mode permissions
 allow charge_only_mode sysfs_battery_supply:dir search;
 allow charge_only_mode sysfs_battery_supply:file { read open };
 allow charge_only_mode sysfs_usb_supply:dir search;
