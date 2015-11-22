@@ -134,9 +134,7 @@ PRODUCT_COPY_FILES += \
 
 # Motorola
 PRODUCT_PACKAGES += \
-    libmoto_camera \
-    libmoto_log \
-    libmoto_ril
+    libmoto_log
 
 # OMX
 PRODUCT_PACKAGES += \
