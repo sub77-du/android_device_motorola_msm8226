@@ -42,7 +42,14 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-BOARD_KERNEL_CMDLINE := androidboot.bootdevice=msm_sdcc.1 androidboot.hardware=qcom vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0
+BOARD_KERNEL_CMDLINE += vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags
+BOARD_KERNEL_CMDLINE += androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x37
+BOARD_KERNEL_CMDLINE += user_debug=31 debug ignore_loglevel
+BOARD_KERNEL_CMDLINE += pmemlog=9 panic_restart=4
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
