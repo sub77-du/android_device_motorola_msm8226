@@ -211,3 +211,7 @@ PRODUCT_PACKAGES += \
     libcurl \
     libqsap_sdk \
     libQWiFiSoftApCfg
+
+# Motorola
+PRODUCT_PACKAGES += \
+    charge_only_mode
