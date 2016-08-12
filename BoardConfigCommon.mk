@@ -57,9 +57,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/motorola/thug
 
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-TARGET_NDK_VERSION_EXP := 5.x-cortex-a7
-TARGET_GCC_VERSION_EXP := 5.x-cortex-a7
-TARGET_KERNEL_VERSION_EXP := 5.x-cortex-a7
+TARGET_NDK_VERSION_EXP := 5.x-uber
+TARGET_GCC_VERSION_EXP := 5.x-uber
+TARGET_KERNEL_VERSION_EXP := 5.x-uber
 TARGET_CLANG_VERSION_EXP := 4.0
 
 # ANT+
@@ -147,10 +147,11 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Optimize-it!!
-#export STRICT_ALIASING := true
-#export ENABLE_GCCONLY := true
-#export GRAPHITE_OPTS := true
-#export CLANG_O3 := true
-#export ENABLE_SANITIZE := true
-#export USE_PIPE := true
+#Optimize-it!!
+export STRICT_ALIASING := true
+export KRAIT_TUNINGS := true
+export ENABLE_GCCONLY := true
+export GRAPHITE_OPTS := true
+export CLANG_O3 := true
+export ENABLE_SANITIZE := true
+export USE_PIPE := true
