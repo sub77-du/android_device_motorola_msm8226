@@ -211,3 +211,7 @@ PRODUCT_PACKAGES += \
 # Motorola
 PRODUCT_PACKAGES += \
     charge_only_mode
+
+# Gello
+PRODUCT_PACKAGES += \
+    Gello

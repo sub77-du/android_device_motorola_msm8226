@@ -147,6 +147,9 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Gello
+WITH_GELLO_SOURCE := true
+
 #Optimize-it!!
 export STRICT_ALIASING := true
 export KRAIT_TUNINGS := true
